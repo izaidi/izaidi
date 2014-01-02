@@ -119,16 +119,21 @@ function navBuy() {
 	setTimeout("$('.buy').fadeIn(300);", 300);
 }
 
+function toNumString(number) {
+	numString = '';
+	if (number < 10) {
+		numString = '00' + number.toString();
+	} else {
+		numString = '0' + number.toString();
+	}
+	return numString;
+}
+
 $(document).ready(function() {
 	var spreadsArray = [];
 	var numSpreads = 24;
 	for (var i=1; i<24; i++) {
-		var spreadString = '';
-		if (i < 10) {
-			spreadString = '00' + i.toString();
-		} else {
-			spreadString = '0' + i.toString();
-		}
+		var spreadString = toNumString(i);
 		spreadsArray.push(spreadString);
 	}
 	$.each(spreadsArray, function(index, value) {
@@ -147,7 +152,11 @@ $(document).ready(function() {
 	$('#thumbs').mouseover(function(event) {
 		roll();
 	});
-	select($("#random").val());
+	
+	var randNum = Math.floor((Math.random()*20)+1);
+	var randString = toNumString(randNum);
+	console.log(randString);
+	select(randString);
 })
 
 $(document).mousemove(function(event) {
