@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="This place is not a place of honor.">
+  <title>waste isolation</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+  <script type="text/javascript" src="javascripts/jquery-1.4.min.js"></script>
+  <script type="text/javascript" src="javascripts/application.js"></script>
+  <style type="text/css">
+  <!--
+  body {
+    background-color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #484848;
+    overflow-x: hidden;
+  }
+  a {
+  	text-decoration: none;
+  	outline: none;
+  	border: 0;
+  	color: white;
+  }
+  #all {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .separator {
+    background-color: #272727;
+    height: 1px;
+    width: 100%;
+    clear: both;
+  }
+  #titlenav {
+    float: right;
+  }
+  #title {
+    margin-top: 93px;
+    position: relative;
+    left: 5px;
+  }
+  #nav {
+    margin-top: 27px;
+    margin-bottom: 21px;
+    text-align: right;
+    position: relative;
+    left: 2px;
+  }
+  #thumbs {
+    white-space:nowrap;
+    position: absolute;
+    top: 245px;
+    left: -600px;
+  }
+  #thumbs a {
+    display: inline;
+    margin-right: 12px;
+  }
+  .unselected {
+    opacity: 0.5;
+  }
+  .unselected:hover {
+    opacity: 0.8;
+  }
+  .selected {
+    opacity: 1.0;
+  }
+  #spread {
+    position: absolute;
+    top: 421px;
+    height: 900px;
+    width: 900px;
+    background-image: url('images/loading.png');
+    background-repeat: no-repeat;
+  }
+  #about, #buy {
+    position: absolute;
+    top: 235px;
+    height: 900px;
+    width: 900px;
+  }
+  #about {
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+  .explain {
+    float: left;
+    margin-top: 168px;
+    position: relative;
+    left: -2px;
+  }
+  #nav img {
+    border: 0;
+  }
+  #buylink {
+    width: 177px;
+    height: 81px;
+    background-image: url('/images/buylink.png');
+    background-repeat: no-repeat;
+    float: right;
+    position: relative;
+    top: -3px;
+    right: 340px;
+  }
+  #buylink:hover {
+    background-image: url('/images/buylinkh.png');
+  }
+  #buytext {
+    display: inline-block;
+    position: relative;
+    left: -4px;
+  }
+  -->
+  </style>
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12526053-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<body>
+  <input type="hidden" id="random" value="005">
+  <a href="javascript:void(0)" onclick="" id="imgTemplate" class="unselected hidden"><img src="" width="140" height="140" id="" border="0" class="unselected" /></a>
+  <div id="thumbs" class="look">
+  </div>
+  <div id="all">
+    <img src="images/spreadexplain.png" width="389" height="25" id="spreadexplain" class="explain look" />
+    <div id="titlenav">
+      <div id="title"><img src="images/title.png" width="133" height="48" /></div>
+      <div id="nav"><img src="images/navlookh.png" id="navlookh" /><a href="javascript:void(0)" id="navlook" onclick="navLook()" class="hidden"><img src="images/navlook.png" /></a><img src="images/navslash.png" /><a href="javascript:void(0)" onclick="navBuy()" id="navbuy"><img src="images/navbuy.png" /></a><img src="images/navbuyh.png" class="hidden" id="navbuyh" /><img src="images/navslash.png" /><a href="javascript:void(0)" id="navabout" onclick="navAbout()"><img src="images/navabout.png" /></a><img src="images/navabouth.png" class="hidden" id="navabouth" /></div>
+    </div>
+    <div class="separator"></div>
+    <div id="spread" class="look">
+      &nbsp;
+    </div>
+    <div id="about" class="hidden about">
+      <img src="images/abouttext.png" usemap="#aboutmap" border="0" />
+      <map id="aboutmap" name="aboutmap">
+        <area shape="rect" coords="81,139,134,165" href="http://downlode.org/Etext/WIPP/" />
+        <area shape="rect" coords="3,195,76,219" href="http://crckrjck.com" />
+      </map>
+    </div>
+    <div id="buy" class="hidden buy">
+      <a id="buylink" href="http://www.lulu.com/commerce/index.php?fBuyProduct=6148018" target="_blank">&nbsp;</a>
+      <img src="images/buytext.png" id="buytext" usemap="#buymap" border="0" />
+      <map id="buymap" name="buymap">
+        <area shape="rect" coords="82,84,141,104" href="mailto:imran.zaidi@gmail.com" />
+      </map>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+body  {
+	background-image: url('images/bg.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #a9a9a9;
+	text-align: center;
+	background-color: #19181c;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+.greytab {
+  background-color: #19181c;
+	font-size: 30px;
+  font-weight: bold;
+}
+.yellowtab {
+  background-color: #ffe327;
+	font-size: 30px;
+  font-weight: bold;
+}
+.lightgreytab {
+  background-color: #262327;
+	font-size: 30px;
+  font-weight: bold;
+}
+.darkgreytab {
+	background-color: #111012;
+	font-size: 30px;
+  font-weight: bold;
+	color: white;
+}
+a.greytablink {
+  color: #a9a8a9;
+}
+a.greytablink:hover {
+  color: white;
+}
+a.lightgreytablink {
+  color: white;
+}
+a.yellowtablink {
+  color: #19181c;
+}
+#taglinewords {
+  background-image: url('images/taglinewords.png');
+  position: fixed;
+  top: 107px;
+  background-repeat: repeat-y;
+}
+#taglinemask {
+	position: fixed;
+  top: 107px;
+}
+#header td {
+	text-align: left;
+}
+#installtab {
+  position: fixed;
+  top: 27px;
+  float: left;
+  width: 20%;
+  right: 0px;
+  z-index: 10;
+  opacity: 0.9;
+}
+#whatitis {
+	position: fixed;
+	right: 25px;
+	width: 25%;
+	top: 410px;
+	text-align: right;
+	color: #525157;
+	font-size: 20px;
+	line-height: 24px;
+	opacity: 0;
+}
+#helptab {
+  position: fixed;
+  top: 27px;
+  float: left;
+  width: 15%;
+  left: 0px;
+  z-index: 10;
+  opacity: 0.9;
+}
+#logotitle {
+  top: 170px;
+  position: fixed;
+  z-index: -1;
+}
+.blacktab {
+  background-color: #131215;
+  color: #f4f4f4;
+  font-size: 18px;
+}
+.bodytext {
+  font-size: 16px;
+  line-height: 24px;
+  width: 422px;
+  text-align: left;
+  color: #7e7e7f;
+  margin-top: 33px;
+  margin-bottom: 67px;
+}
+.bodytextplain {
+  font-size: 16px;
+  line-height: 24px;
+  width: 422px;
+  text-align: left;
+  color: #7e7e7f;
+  margin-bottom: 67px;
+}
+.logocorner {
+	left: 27px;
+	top: 27px;
+	position: fixed;
+	z-index: 0;
+}
+.pagetitle {
+	color: #f0f0f0;
+	font-size: 48px;
+	line-height: 48px;
+}
+.subtitle {
+	color: #6b686e;
+	font-size: 30px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+.pageheader {
+	position: fixed;
+	z-index: -2;
+}
+.helpmenu {
+  position: fixed;
+	top: 27px;
+ 	right: 0px;
+	width: 20%;
+}
+
+.helptab {
+  margin-bottom: 10px;
+  z-index: 10;
+  opacity: 0.9;
+}
+.helptabinactive {
+  margin-bottom: 10px;
+  z-index: 10;
+}
+.bodytext a {
+	color: #ffe327;
+}
+.bodytext a:hover {
+	color: white;
+}
+.bodytextplain a {
+	color: #ffe327;
+}
+.bodytextplain a:hover {
+	color: white;
+}
+.bottomnav {
+	color:#6A6A6B;
+	font-size:14px;
+	line-height:18px;
+	padding-bottom:72px;
+	padding-top:28px;
+}
+.bottomnav a:hover {
+	color:#FFFFFF;
+}
+.bottomnav a {
+	color:#ABABAC;
+}
+.bottomnavinstall {
+	color:#6A6A6B;
+	font-size:14px;
+	line-height:18px;
+	padding-bottom:70px;
+	padding-top:28px;
+}
+.bottomnavlinks {
+	line-height:20px;
+	margin-top:6px;
+}
+a.bottominstall:hover {
+	color:#FFFFFF;
+}
+a.bottominstall {
+	color:#E6E6E6;
+	font-weight:bold;
+}
+.copyright {
+	color:#59595A;
+	font-size:12px;
+	margin-top:32px;
+}
+#bottomtable {
+	position: fixed;
+	bottom: 0px;
+	opacity: 0;
+	z-index: 10;
+}
+.helpscreenshot {
+	background-color:#19181c;
+	margin-bottom:23px;
+	padding:11px;
+}
+.screenshot {
+	background-color:#19181c;
+	margin-top:23px;
+	padding:11px;
+}
+.helpscreenshotp {
+	background-color:#19181c;
+	margin-bottom:23px;
+	padding:11px;
+}
+.helpstatus {
+	color:#A9A9A9;
+	font-size:14px;
+	line-height:16px;
+}
+.highlight {
+	color: #c8c8c8;
+}

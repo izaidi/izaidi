@@ -1,0 +1,284 @@
+body  {
+	background-image: url('images/bgv2.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: white;
+	background-color: #b4b4b4;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hidden {
+	display: none;
+}
+
+img {
+	margin: 0;
+	border: 0;
+}
+
+#topnav {
+	color: #343434;
+	font-size: 20px;
+	position: fixed;
+	right: 20px;
+	top: 27px;
+	z-index: 100;
+}
+
+#topnav a {
+	color: #00c3e5;
+}
+
+#topnav a.orange {
+	color: #ff751e;
+}
+
+#topnav a.yellow {
+	color: #ffd200;
+}
+
+#topnav a.green {
+	color: #97ff2b;
+}
+
+#topnav a:hover {
+	color: white;
+}
+
+
+#header {
+	text-align: left;
+	position: fixed;
+	left: 41px;
+	width: 923px;
+	white-space:nowrap;
+}
+
+#installbox, #learnbox {
+	height: 62px;
+	position: absolute;
+	top: 338px;
+	width: 340px;
+	z-index: 100;
+}
+
+#installbox {
+	left: 0px;
+}
+
+#learnbox {
+	right: 0px;
+}
+
+#installbg {
+	background-color: #eb2200;
+	opacity: 0.6;
+	width: 100%;
+	height: 62px;
+}
+
+#learnbg {
+	background-color: #d8ff00;
+	opacity: 0.6;
+	width: 100%;
+	height: 62px;
+}
+
+#installtext {
+	text-align: right;
+	font-size: 36px;
+	line-height: 36px;
+	color: white;
+	position: relative;
+	top: -50px;
+	margin-right: 15px;
+}
+
+#learntext {
+	text-align: left;
+	font-size: 36px;
+	line-height: 36px;
+	color: #040404;
+	position: relative;
+	top: -50px;
+	margin-left: 15px;
+}
+
+#installtext .subd {
+	color: black;
+	opacity: 0.3;
+}
+
+#logo {
+	margin-top: 41px;
+}
+
+#logotagline {
+	margin-top: 80px;
+}
+
+#main, #mainbg {
+	width: 880px;
+	margin: 0 auto;
+	top: 204px;
+	position: absolute;
+}
+
+.left, .right {
+	display: inline-block;
+	width: 400px;
+	text-align: left;
+	padding-bottom: 300px;
+}
+
+.left {
+	float: left;
+}
+
+.leftbg {
+	background-color: #ffff00;
+	opacity: 0.6;
+}
+
+.right {
+	float: right;
+}
+
+.rightbg {
+	background-color: #00d9ff;
+	opacity: 0.6;
+}
+
+.pitch {
+	margin-bottom: 62px;
+}
+
+.screenshotcontainer {
+	background-color:#131313;
+	background-repeat: no-repeat;
+	background-position: 11px 11px;
+	margin-top:20px;
+	margin-bottom: 20px;
+	padding:11px;
+	height: 237px;
+	width: 400px;
+	position: relative;
+	left: -11px;
+	opacity: 0.9;
+}
+.screenshotcontainer:hover {
+	cursor: pointer hand;
+}
+.screenshotcontainer img {
+	border: none;
+}
+#sidebarscreens {
+	background-image: url('images/screensidebar1.png');
+}
+#publisherscreens {
+	background-image: url('images/screenpublisher1.png');
+}
+.screenshotfading {
+	float: left;
+}
+
+.copy {
+	font-size: 16px;
+	line-height: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 17px;
+}
+
+.scopy {
+	font-size: 14px;
+	line-height: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 17px;
+	position: relative;
+	top: -9px;
+}
+
+.left .copy {
+	color: #373702;
+}
+
+.right .copy {
+	color: #063e48;
+}
+
+.right .scopy {
+	text-align: right;
+}
+
+
+.right .dark {
+	color: #02262c;
+}
+
+.copy .h {
+	color: #040404;
+}
+
+.headline {
+	font-size: 30px;
+	line-height: 40px;
+	width: 360px;
+	margin-bottom: 30px;
+	position: fixed;
+}
+
+.black {
+	color: black;
+}
+
+.whitebg {
+	background-color: white;
+	opacity: 0.9;
+	color: black;
+}
+
+.blackbg {
+	background-color: black;
+	opacity: 0.9;
+}
+
+.headline a {
+	color: black;
+	background-color: #ffd200;
+}
+
+.headline a:hover {
+	color: black;
+	background-color: white;
+}
+
+.heading {
+	color: white;
+	font-size: 24px;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.copy a {
+	background-color: #040404;
+	color: white;
+}
+
+.copy a:hover {
+	background-color: white;
+	color: #040404;
+}
