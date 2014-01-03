@@ -56,9 +56,26 @@
 		
 	}
   </style>
+  <script type="text/javascript">
+	found = false;
+	function getSelText() {
+	  var txt = '';
+	  if (window.getSelection) {
+	    txt = window.getSelection();
+	  } else if (document.getSelection) {
+	    txt = document.getSelection();
+	  } else if (document.selection) {
+	    txt = document.selection.createRange().text;
+	  } else return;
+	  if (!found && txt.toString().indexOf('"THE G-G-G-GHOST"') != -1) {
+		alert('congrats');
+		found = true;
+	  }
+	}
+  </script>
 </head>
 
-<body>
+<body onmousemove="getSelText();" onmouseup="getSelText();">
   	<div id="content">
 		<p><b>IMRAN <span id="nickname">"<span style="color:white;">THE G-G-G-GHOST</span>" </span>ZAIDI</b></p>
 
