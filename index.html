@@ -58,24 +58,32 @@
   </style>
   <script type="text/javascript">
 	found = false;
+	active = false;
+	
+	function activate() {
+		active = true;
+	}
+	
 	function getSelText() {
-	  var txt = '';
-	  if (window.getSelection) {
-	    txt = window.getSelection();
-	  } else if (document.getSelection) {
-	    txt = document.getSelection();
-	  } else if (document.selection) {
-	    txt = document.selection.createRange().text;
-	  } else return;
-	  if (!found && txt.toString().indexOf('THE G-G-G-GHOST"') != -1) {
-		alert('congrats');
-		found = true;
-	  }
+		if (active && !found) {
+			var txt = '';
+			if (window.getSelection) {
+				txt = window.getSelection();
+			} else if (document.getSelection) {
+				txt = document.getSelection();
+			} else if (document.selection) {
+				txt = document.selection.createRange().text;
+			} else return;
+			if (txt.toString().indexOf('THE G-G-G-GHOST"') != -1) {
+				alert('congrats');
+				found = true;
+			}
+		}
 	}
   </script>
 </head>
 
-<body onmousemove="getSelText();" onmouseup="getSelText();">
+<body onmousedown="activate();" onmousemove="getSelText();" onmouseup="getSelText();">
   	<div id="content">
 		<p><b>IMRAN <span id="nickname">"<span style="color:white;">THE G-G-G-GHOST</span>" </span>ZAIDI</b></p>
 
