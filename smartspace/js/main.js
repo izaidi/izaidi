@@ -1,10 +1,10 @@
 function placeObjects() {
-  var buffer = 1.5;
+  var buffer = 1.6;
   var object_area = $('.'+size).height();
   var min_x = 0;
   var max_x = winWidth - (buffer * object_area);
   var min_y = 80;
-  var max_y = winHeight - (buffer * object_area);
+  var max_y = winHeight - (buffer * object_area) - 150;
   var filled_areas = new Array();
   
   $('.avoid').each(function() {
@@ -136,7 +136,7 @@ $(document).ready(function(){
     
     // calculate appropriate size
     $.each(sizeWidths, function(index, width) {
-      var maxPop = (winWidth * winHeight) / (8 * width * width);
+      var maxPop = (winWidth * winHeight) / (7 * width * width);
       if (maxPop > population) {
         size = sizes[index];
         console.log('size found: ' + size);
