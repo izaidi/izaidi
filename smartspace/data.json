@@ -1,0 +1,52 @@
+{
+    "00-10-01-49": {
+        "companyLogoUrl": "http:\/\/reelyactive.com\/notman\/images\/Hypejar.png",
+        "companyName": "Hypejar",
+        "companyTitle": "CEO & Co-founder",
+        "companyUrl": "http:\/\/www.hypejar.com\/",
+        "firstName": "Grant",
+        "lastName": "Yim",
+        "linkedInPublicUrl": "http:\/\/ca.linkedin.com\/pub\/grant-yim\/17\/b3b\/361",
+        "portraitImageUrl": "http:\/\/reelyactive.com\/notman\/images\/GrantYim.jpg",
+        "twitterPersonalScreenName": "grantyim",
+        "presence": 12
+    },
+    "00-10-00-A6": {
+        "companyLogoUrl": "http:\/\/reelyactive.com\/notman\/images\/Notman.png",
+        "companyName": "Notman House",
+        "companyTitle": "Campus Director",
+        "companyUrl": "http:\/\/notman.org\/",
+        "defaultMessage": "Just getting started...no end in sight!",
+        "firstName": "Noah",
+        "lastName": "Redler",
+        "linkedInPublicUrl": "http:\/\/ca.linkedin.com\/pub\/noah-redler\/1a\/599\/4b0",
+        "portraitImageUrl": "http:\/\/reelyactive.com\/notman\/images\/NoahRedler.jpg",
+        "twitterPersonalScreenName": "NoahRed",
+        "presence": 22
+    },
+    "00-10-00-58": {
+        "companyLogoUrl": "http:\/\/www.betakit.com\/wp-content\/uploads\/2013\/06\/bk_logo-e1373275415883.png",
+        "companyName": "BetaKit",
+        "companyTitle": "Reporter",
+        "companyUrl": "http:\/\/www.betakit.com\/",
+        "defaultMessage": "I am an aspiring douchebag, and I love cats",
+        "firstName": "Joey",
+        "lastName": "Czikk",
+        "linkedInPublicUrl": "http:\/\/ca.linkedin.com\/pub\/joseph-czikk\/62\/6b0\/64b",
+        "portraitImageUrl": "http:\/\/reelyactive.com\/notman\/images\/JoeyCzikk.jpg",
+        "twitterPersonalScreenName": "JoeyCzikk",
+        "presence": 25
+    },
+    "00-80-00-22": {
+        "companyLogoUrl": "http:\/\/www.techvibes.com\/public\/cache\/company\/100x50\/11873_osmo_foundation_255255255.png",
+        "companyName": "OSMO Foundation",
+        "companyUrl": "http:\/\/osmofoundation.org",
+        "defaultMessage": "Home of the web and mobile",
+        "firstName": "Notman",
+        "lastName": "House",
+        "linkedInPublicUrl": "http:\/\/www.linkedin.com\/groups?gid=3055191",
+        "portraitImageUrl": "http:\/\/reelyactive.com\/notman\/images\/Area-Notman.png",
+        "twitterPersonalScreenName": "notman",
+        "presence": 200
+    }
+}

@@ -1,0 +1,157 @@
+html{ height:100%; }
+
+body {
+  background: #54ade0; /* Old browsers */
+  background: -moz-linear-gradient(top, #54ade0 0%, #268bc5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#54ade0), color-stop(100%,#268bc5)); /* Chrome,Safari4+ */
+  min-height: 100%;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#header {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding-left: 15px;
+  font-weight: 300;
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  background: -moz-linear-gradient(top, #2f2e34 0%, #1e1d23 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f2e34), color-stop(100%,#1e1d23)); /* Chrome,Safari4+ */
+}
+
+#header .welcome { font-style: italic; }
+#header .space-name { font-weight: 600; }
+#header .reely { color: #ffa632; font-weight: 600; }
+#header .active { color: #50b8f4; font-weight: 600; }
+#header .smart-space { font-style: italic; font-weight: 700; }
+
+#title {
+  position: absolute;
+  z-index: 9;
+  display: inline-block;
+  font-size: 60px;
+  line-height: 60px;
+  top: 90px;
+  left: 15px;
+  font-weight: 300;
+  color: white;
+}
+
+#footer {
+  z-index: 1000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding-left: 15px;
+  font-size: 30px;
+  line-height: 80px;
+  color: #27262c;
+  font-weight: 300;
+  font-style: italic;
+  background: -moz-linear-gradient(top, #f7f7f7 0%, #dbdbdb 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+}
+
+#footer .url {
+  color: #288cc6;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.faded {
+  opacity: 0.5;
+}
+
+.person {
+  z-index: 10;
+  position: absolute;
+  text-align: center;
+  -moz-background-clip: padding;     /* Firefox 3.6 */
+  -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+  background-clip: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.big {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  border: solid rgba(255, 255, 255, 0.4);
+  border-width: 30px;
+}
+
+.medium {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  border: solid rgba(255, 255, 255, 0.4);
+  border-width: 20px;
+}
+
+.small {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: solid rgba(255, 255, 255, 0.4);
+  border-width: 15px;
+}
+
+.tiny {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: solid rgba(255, 255, 255, 0.4);
+  border-width: 10px;
+}
+
+.puny {
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  border: solid rgba(255, 255, 255, 0.4);
+  border-width: 8px;
+}
+
+.label {
+  color: white;
+  position: relative;
+  float: center;
+}
+
+.label .name {
+  font-weight: 600;
+}
+
+.label .company {
+  font-weight: 300;
+}
+
+.big .label { top: 335px; font-size: 24px; line-height: 24px; }
+.big .label .company { font-size: 20px; }
+
+.medium .label { top: 225px; font-size: 20px; line-height: 20px; }
+.medium .label .company { font-size: 16px; }
+
+.small .label { top: 170px; font-size: 16px; line-height: 16px; }
+.small .label .company { font-size: 14px; }
+
+.tiny .label { top: 112px; font-size: 14px; line-height: 14px; }
+.tiny .label .company { font-size: 12px; }
+
+.puny .label { top: 85px; font-size: 12px; line-height: 12px; }
+.puny .label .company { font-size: 10px; }
+
+.dummy {
+  display: none;
+}
