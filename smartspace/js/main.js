@@ -4,7 +4,7 @@ function placeObjects() {
   var min_x = 0;
   var max_x = winWidth - (buffer * object_area);
   var min_y = 80;
-  var max_y = winHeight - (buffer * object_area) - 120;
+  var max_y = winHeight - (buffer * object_area);
   var filled_areas = new Array();
   
   $('.avoid').each(function() {
