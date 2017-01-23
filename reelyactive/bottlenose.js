@@ -18,7 +18,7 @@ angular.module('reelyactive.bottlenose', [])
         // Allow same origin resource loads.
         'self',
         // Allow loading from outer templates domain.
-        CHAMPAGNE_ROOT+'**'
+        SOCIAL_TEMPLATE_ROOT+'**'
       ]);
     } 
   })
