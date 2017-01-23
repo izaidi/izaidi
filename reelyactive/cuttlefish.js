@@ -103,15 +103,15 @@ angular.module('reelyactive.cuttlefish', [ 'ngAnimate', 'ui.bootstrap' ])
     }
   });
   
-var BubbleTemplate = '
+var BubbleTemplate = `
   <div class="bubble" id="{{itemID}}">
 
 
     <!-- Person -->
 
     <div class="bubble--photo" ng-if="person"
-         ng-style="{\'background-image\' : \'url(\' + person[\'schema:image\'] + \')\' }"
-         data-name="{{person[\'schema:givenName\']}}" data-type="Person">
+         ng-style="{'background-image' : 'url(' + person['schema:image'] + ')' }"
+         data-name="{{person['schema:givenName']}}" data-type="Person">
 
       <div class="bubble--label">
         {{person["schema:givenName"]}} {{person["schema:familyName"]}}
@@ -123,8 +123,8 @@ var BubbleTemplate = '
     <!-- Place -->
 
     <div class="bubble--photo" ng-if="place" 
-         ng-style="{\'background-image\' : \'url(\' + place[\'schema:image\'] + \')\' }"
-         data-name="{{place[\'schema:name\']}}" data-type="Place">
+         ng-style="{'background-image' : 'url(' + place['schema:image'] + ')' }"
+         data-name="{{place['schema:name']}}" data-type="Place">
 
       <div class="bubble--label">
         {{place["schema:name"]}}
@@ -136,8 +136,8 @@ var BubbleTemplate = '
     <!-- Product -->
 
     <div class="bubble--photo" ng-if="product" 
-         ng-style="{\'background-image\' : \'url(\' + product[\'schema:image\'] + \')\' }"
-         data-name="{{product[\'schema:name\']}}" data-type="Product">
+         ng-style="{'background-image' : 'url(' + product['schema:image'] + ')' }"
+         data-name="{{product['schema:name']}}" data-type="Product">
 
       <div class="bubble--label">
         {{product["schema:name"]}}
@@ -148,8 +148,8 @@ var BubbleTemplate = '
     <!-- Organization -->
 
     <div class="bubble--photo" ng-if="organization"
-         ng-style="{\'background-image\' : \'url(\' + organization[\'schema:logo\'] + \')\' }"
-         data-name="{{product[\'schema:name\']}}" data-type="Organization">
+         ng-style="{'background-image' : 'url(' + organization['schema:logo'] + ')' }"
+         data-name="{{product['schema:name']}}" data-type="Organization">
     
       <div class="bubble--label">
         {{organization["schema:name"]}}
@@ -158,4 +158,4 @@ var BubbleTemplate = '
     </div>
 
   </div>
-';
+`;

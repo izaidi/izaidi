@@ -108,7 +108,7 @@ angular.module('reelyactive.bottlenose', [])
   
 var SocialTemplates = {
   
-  twitter: '
+  twitter: `
     <div class="tweets overlay--content">
       <a href="http://twitter.com/{{user.username}}" target="_blank">
         <div class="overlay--header">
@@ -123,7 +123,7 @@ var SocialTemplates = {
         </a>
       </div>
     </div>   
-  '
+  `
   
 }
   
