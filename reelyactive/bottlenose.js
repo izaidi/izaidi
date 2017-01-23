@@ -12,6 +12,17 @@ if (typeof CHAMPAGNE_ROOT != 'undefined') {
 
 angular.module('reelyactive.bottlenose', [])
 
+  .config(function($sceDelegateProvider) {
+    if (typeof CHAMPAGNE_ROOT != 'undefined') {
+      $sceDelegateProvider.resourceUrlWhitelist([
+        // Allow same origin resource loads.
+        'self',
+        // Allow loading from outer templates domain.
+        CHAMPAGNE_ROOT+'**'
+      ]);
+    } 
+  })
+
   .factory('bottlenose', function bottlenoseFactory($http) {
 
     var fetch = function(url, callback) {

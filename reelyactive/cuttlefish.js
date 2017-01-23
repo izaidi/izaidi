@@ -27,12 +27,14 @@ UNSUPPORTED_STORY_JSON = {
 angular.module('reelyactive.cuttlefish', [ 'ngAnimate', 'ui.bootstrap' ])
 
   .config(function($sceDelegateProvider) {
-    $sceDelegateProvider.resourceUrlWhitelist([
-      // Allow same origin resource loads.
-      'self',
-      // Allow loading from outer templates domain.
-      CHAMPAGNE_ROOT+'**'
-    ]); 
+    if (typeof CHAMPAGNE_ROOT != 'undefined') {
+      $sceDelegateProvider.resourceUrlWhitelist([
+        // Allow same origin resource loads.
+        'self',
+        // Allow loading from outer templates domain.
+        CHAMPAGNE_ROOT+'**'
+      ]);
+    } 
   })
 
   .directive('bubble', function() {
