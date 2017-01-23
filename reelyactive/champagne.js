@@ -29,7 +29,7 @@ var ChampagnePopper = {
   
   styles: [
     'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300',
-    'style/bubble.css',
+    CHAMPAGNE_ROOT+'style/bubble.css',
   ],
   
   getScript: function(script) {
