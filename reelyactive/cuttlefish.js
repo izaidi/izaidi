@@ -5,6 +5,10 @@
 
 
 DEFAULT_BUBBLE_SIZE = '240px';
+BUBBLE_TEMPLATE_URL = 'bubble.html';
+if (typeof CHAMPAGNE_ROOT != 'undefined') {
+  BUBBLE_TEMPLATE_URL = CHAMPAGNE_ROOT + 'bubble.html';
+}
 TYPE_PERSON = 'Person';
 TYPE_PRODUCT = 'Product';
 TYPE_PLACE = 'Place';
@@ -21,6 +25,17 @@ UNSUPPORTED_STORY_JSON = {
 
 
 angular.module('reelyactive.cuttlefish', [ 'ngAnimate', 'ui.bootstrap' ])
+
+  .config(function($sceDelegateProvider) {
+    if (typeof CHAMPAGNE_ROOT != 'undefined') {
+      $sceDelegateProvider.resourceUrlWhitelist([
+        // Allow same origin resource loads.
+        'self',
+        // Allow loading from outer templates domain.
+        CHAMPAGNE_ROOT+'**'
+      ]);
+    } 
+  })
 
   .directive('bubble', function() {
 
@@ -99,63 +114,6 @@ angular.module('reelyactive.cuttlefish', [ 'ngAnimate', 'ui.bootstrap' ])
         mode: "@"
       },
       link: link,
-      template: BubbleTemplate
+      templateUrl: BUBBLE_TEMPLATE_URL
     }
   });
-  
-var BubbleTemplate = `
-  <div class="bubble" id="{{itemID}}">
-
-
-    <!-- Person -->
-
-    <div class="bubble--photo" ng-if="person"
-         ng-style="{'background-image' : 'url(' + person['schema:image'] + ')' }"
-         data-name="{{person['schema:givenName']}}" data-type="Person">
-
-      <div class="bubble--label">
-        {{person["schema:givenName"]}} {{person["schema:familyName"]}}
-      </div>
-
-    </div>
-
-
-    <!-- Place -->
-
-    <div class="bubble--photo" ng-if="place" 
-         ng-style="{'background-image' : 'url(' + place['schema:image'] + ')' }"
-         data-name="{{place['schema:name']}}" data-type="Place">
-
-      <div class="bubble--label">
-        {{place["schema:name"]}}
-      </div>
-
-    </div>
-
-
-    <!-- Product -->
-
-    <div class="bubble--photo" ng-if="product" 
-         ng-style="{'background-image' : 'url(' + product['schema:image'] + ')' }"
-         data-name="{{product['schema:name']}}" data-type="Product">
-
-      <div class="bubble--label">
-        {{product["schema:name"]}}
-      </div>
-
-  	</div>
-
-    <!-- Organization -->
-
-    <div class="bubble--photo" ng-if="organization"
-         ng-style="{'background-image' : 'url(' + organization['schema:logo'] + ')' }"
-         data-name="{{product['schema:name']}}" data-type="Organization">
-    
-      <div class="bubble--label">
-        {{organization["schema:name"]}}
-      </div>
-
-    </div>
-
-  </div>
-`;
