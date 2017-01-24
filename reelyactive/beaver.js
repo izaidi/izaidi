@@ -192,7 +192,7 @@ angular.module('reelyactive.beaver', [])
 
       if(typeof condition == 'undefined') {
         condition = function() { return !Bubbles.areActive(); }
-      } else {
+      }
       conditionSatisfied = condition;
 
       Socket.on('appearance', function(event) {
