@@ -10,7 +10,7 @@ if (typeof CHAMPAGNE_ROOT != 'undefined') {
   SOCIAL_TEMPLATE_ROOT = CHAMPAGNE_ROOT + 'social/';
 }
 
-angular.module('reelyactive.bottlenose', ['ngSanitize'])
+angular.module('reelyactive.bottlenose', [])
 
   .config(function($sceDelegateProvider) {
     if (typeof CHAMPAGNE_ROOT != 'undefined') {
