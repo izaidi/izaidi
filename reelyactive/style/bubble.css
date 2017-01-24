@@ -4,6 +4,7 @@
   overflow: hidden;
   display: none;
   position: absolute;
+  z-index: 10;
 }
 
 bubble[fade=true].ng-enter {
