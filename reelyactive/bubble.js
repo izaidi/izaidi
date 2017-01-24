@@ -1,3 +1,8 @@
+ASSET_ROOT = 'images/icons/';
+if (typeof CHAMPAGNE_ROOT != 'undefined') {
+  ASSET_ROOT = CHAMPAGNE_ROOT + 'social/icons/';
+}
+
 var Bubble = function(scope) {
   var self = this;
   self.scope = scope;
@@ -595,24 +600,24 @@ var BubbleServices = {
   
   Twitter: {
     keyString: 'twitter.com',
-    image: 'images/icons/twitter.png',
+    image: ASSET_ROOT+'twitter.png',
     tooltip: "See {{name}}'s tweets",
     overlay: true
   },
   
   LinkedIn: {
     keyString: 'linkedin.com',
-    image: 'images/icons/linkedin.png'
+    image: ASSET_ROOT+'linkedin.png'
   },
   
   Instagram: {
     keyString: 'instagram.com',
-    image: 'images/icons/instagram.png'
+    image: ASSET_ROOT+'instagram.png'
   },
   
   Facebook: {
     keyString: 'facebook.com',
-    image: 'images/icons/facebook.png'
+    image: ASSET_ROOT+'facebook.png'
   }
   
 }
