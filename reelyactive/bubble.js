@@ -514,7 +514,7 @@ Bubble.prototype = {
       subBubble.show();
       subBubble.css({
         position: 'absolute',
-        zIndex: 1,
+        zIndex: -1,
         top: bubblePos.top+self.borderSize,
         left: bubblePos.left+self.borderSize,
         borderWidth: 0,
