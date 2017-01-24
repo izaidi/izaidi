@@ -22,11 +22,11 @@ var ChampagnePopper = {
     'https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.2/ui-bootstrap-tpls.min.js',
     {
       file: 'https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.min.js',
-      ignore: Champagne.socketsDisabled
+      ignore: function() { return !Champagne.socketsEnabled }
     },
     {
       file: CHAMPAGNE_ROOT+'libs/socket.min.js',
-      ignore: Champagne.socketsDisabled
+      ignore: function() { return !Champagne.socketsEnabled }
     },
     CHAMPAGNE_ROOT+'beaver.js',
     CHAMPAGNE_ROOT+'cormorant.js',
@@ -117,10 +117,6 @@ var Champagne = {
   enableSockets: function() {
     var self = this;
     self.socketsEnabled = true;
-  },
-  
-  socketsDisabled: function() {
-    return !Champagne.socketsEnabled;
   },
   
   ready: function(js) {
