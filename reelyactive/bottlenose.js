@@ -10,7 +10,7 @@ if (typeof CHAMPAGNE_ROOT != 'undefined') {
   SOCIAL_TEMPLATE_ROOT = CHAMPAGNE_ROOT + 'social/';
 }
 
-angular.module('reelyactive.bottlenose', [])
+angular.module('reelyactive.bottlenose', ['ngSanitize'])
 
   .config(function($sceDelegateProvider) {
     if (typeof CHAMPAGNE_ROOT != 'undefined') {
@@ -18,7 +18,6 @@ angular.module('reelyactive.bottlenose', [])
         // Allow same origin resource loads.
         'self',
         // Allow loading from outer templates domain.
-        CHAMPAGNE_ROOT+'**',
         SOCIAL_TEMPLATE_ROOT+'**'
       ]);
     } 
