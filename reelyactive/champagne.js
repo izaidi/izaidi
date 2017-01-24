@@ -1,4 +1,4 @@
-CHAMPAGNE_ROOT = 'http://localhost:3000/';
+CHAMPAGNE_ROOT = 'http://izaidi.me/reelyactive/';
 
 var ChampagnePopper = {
   
