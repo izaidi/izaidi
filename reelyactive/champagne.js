@@ -5,7 +5,7 @@ var ChampagnePopper = {
   scripts: [
     {
       file: 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js',
-      loaded: function() { // if this returns true, script is already loaded
+      ignore: function() { // if this returns true, script is already loaded
         if (typeof angular == 'undefined') return false;
         if (angular.version.major >= 2) return true; // v2.0 or newer
         if (angular.version.minor >= 4) return true; // v1.4 or newer
@@ -14,12 +14,20 @@ var ChampagnePopper = {
     },
     {
       file: 'https://code.jquery.com/jquery-3.1.0.min.js',
-      loaded: function() {
+      ignore: function() {
         return typeof jQuery != 'undefined';
       }
     },
     'https://code.angularjs.org/1.4.7/angular-animate.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.2/ui-bootstrap-tpls.min.js',
+    {
+      file: 'https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.min.js',
+      ignore: function() { return !Champagne.socketsEnabled }
+    },
+    {
+      file: CHAMPAGNE_ROOT+'libs/socket.min.js',
+      ignore: function() { return !Champagne.socketsEnabled }
+    },
     CHAMPAGNE_ROOT+'beaver.js',
     CHAMPAGNE_ROOT+'cormorant.js',
     CHAMPAGNE_ROOT+'cuttlefish.js',
@@ -34,7 +42,7 @@ var ChampagnePopper = {
   
   getScript: function(script) {
     if (typeof script === 'object') {
-      if (script.loaded()) return Promise.resolve(true);
+      if (script.ignore()) return Promise.resolve(true);
       file = script.file;
     } else {
       file = script;
@@ -81,19 +89,34 @@ var ChampagnePopper = {
 
 var Champagne = {
   
+  socketsEnabled: false,
+  
   flow: function() {
     var self = this;
     
-    angular.module('champagne', ['reelyactive.beaver',
-                                 'reelyactive.cormorant',
-                                 'reelyactive.cuttlefish',
-                                 'reelyactive.bottlenose']);
+    var dependencies = [
+      'reelyactive.beaver',
+      'reelyactive.cormorant',
+      'reelyactive.cuttlefish',
+      'reelyactive.bottlenose'
+    ];
+    
+    if (self.socketsEnabled) {
+      dependencies.push('btford.socket-io');
+    }
+    
+    angular.module('champagne', dependencies);
     
     self.trackModules();
     if (typeof self.uncork !== "undefined") { 
       self.uncork();
     }
     self.initModules();
+  },
+  
+  enableSockets: function() {
+    var self = this;
+    self.socketsEnabled = true;
   },
   
   ready: function(js) {
