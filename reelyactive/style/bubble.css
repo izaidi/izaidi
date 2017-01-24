@@ -190,6 +190,10 @@ bubble[fade=true].ng-leave.ng-leave-active {
   display: inline;
 }
 
+.tweets a {
+  text-decoration: none;
+}
+
 .twitter--bio {
   padding: 10px;
   font-size: 14px;
