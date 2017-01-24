@@ -190,9 +190,10 @@ angular.module('reelyactive.beaver', [])
     // Handle incoming socket events by type
     var handleSocketEvents = function(Socket, condition) {
 
-      if(typeof condition !== 'undefined') {
-        conditionSatisfied = condition;
-      }
+      if(typeof condition == 'undefined') {
+        condition = function() { return !Bubbles.areActive(); }
+      } else {
+      conditionSatisfied = condition;
 
       Socket.on('appearance', function(event) {
         updateDevice('appearance', event, condition);
