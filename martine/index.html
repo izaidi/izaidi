@@ -16,6 +16,7 @@
       $('.loading').fadeOut(300);
       var bioWidth = $('.name').width();
       $('.more').css({width: bioWidth+'px'});
+      document.getElementById('theblessing').play();
       setTimeout(showBio, 1000);
     });
   </script>
@@ -41,7 +42,7 @@
       </div>
     </div>
   </div>
-  <audio controls preload="auto" autoplay style="display: none">
+  <audio id="theblessing" controls preload="auto" style="display: none">
     <source src="songs/theblessing.m4a" type="audio/mp4" />
   </audio>
   <div class="bio">
