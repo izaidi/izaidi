@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Futura";
+  src: url(../fonts/Futura-Medium.woff) format("woff");
+}
+html {
+  height: 100%;
+}
+body {
+  background: url(../bg.jpg);
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100%;
+  font-family: Futura;
+  color: white;
+  margin: 3%;
+}
+.loading {
+  background-color: #ff792f;
+  min-height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.loading-text {
+  margin-bottom: 15px;
+}
+.bio {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  opacity: 0;
+}
+.name {
+  font-size: 52px;
+  display: inline-block;
+  line-height: 52px;
+}
+.sub {
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 5px;
+}
+.more {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 18px;
+}
+.spinner {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+}
