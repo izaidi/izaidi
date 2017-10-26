@@ -70,21 +70,21 @@ function sizeInnerCircle(id, size) {
        name: 'Lobby',
        occupancy: 19,
        capacity: 50,
-       photo: 'images/lobby.jpg'
+       photo: 'https://static1.squarespace.com/static/5166f76be4b0acbb38a3fe03/t/54bc67afe4b06fad9b9fc62b/1421633457806/'
      },
      {
        id: 'meeting1',
        name: 'Meeting Room 1',
        occupancy: 0,
        capacity: 6,
-       photo: 'images/meeting1.jpg'
+       photo: 'https://www.officelovin.com/wp-content/uploads/2015/12/we-work-spitalfields-1.jpg'
      },
      {
        id: 'meeting2',
        name: 'Meeting Room 2',
        occupancy: 3,
        capacity: 6,
-       photo: 'images/meeting2.jpg'
+       photo: 'https://www.officelovin.com/wp-content/uploads/2015/12/we-work-spitalfields-1.jpg'
      }
    ];
    
