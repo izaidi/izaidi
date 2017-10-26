@@ -1,0 +1,9 @@
+<div class="{{type}} circle" id="{{zone.id}}" data-occupancy="{{zone.occupancy}}" data-capacity="{{zone.capacity}}">
+  <div class="{{color}} area-bg"></div>
+  <div class="area-image" ng-style="{'background-image' : 'url(' + zone.photo + ')' }"></div>
+  <div class="{{color}} inner-circle">
+    <div class="label-people"><span class="num-people">{{zone.occupancy}}</span> people</div>
+  </div>
+  <div class="label-area">{{zone.name}}</div>
+  <div class="label-empty">empty</div>
+</div>

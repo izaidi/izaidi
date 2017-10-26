@@ -1,0 +1,109 @@
+body {
+  background-color: #362d48;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.bg {
+  background-image: url('../images/level.jpg');
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.area-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.4;
+  position: absolute;
+}
+
+.area-image {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.4;
+  position: absolute;
+}
+
+.inner-circle {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+}
+
+.empty.circle .inner-circle {
+  display: none;
+}
+
+.label-empty {
+  font-size: 20px;
+  line-height: 40px;
+  font-style: italic;
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  bottom: 30%;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  font-weight: 100;
+}
+
+.normal.circle .label-empty {
+  display: none;
+}
+
+.label-people {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  display: none;
+}
+
+.num-people {
+  font-weight: 700;
+}
+
+.label-area {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.aqua {
+  background-color: #4aced3;
+}
+
+.magenta {
+  background-color: #ff5c9d;
+}
+
+.yellow {
+  background-color: #f6b75e;
+}
